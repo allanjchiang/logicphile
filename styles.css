@@ -1,4 +1,7 @@
 h1{
     background-color: #063970;
     color: white;
+    top: 0;
+    left: 0;
+    max-width: 100%;
 }
