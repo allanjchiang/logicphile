@@ -20,6 +20,7 @@ h1{
     width: 100%;
 }
 .banner .welcome{
+    color: white;
     background-color: #154c79;
     position: absolute;
     left: 0;
