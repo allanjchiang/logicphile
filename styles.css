@@ -20,10 +20,13 @@ h1{
     width: 100%;
 }
 .banner .welcome{
-    background-color: ;
+    background-color: #154c79;
     position: absolute;
     left: 0;
     top: 30%;
+}
+nav{
+    background-color: ;
 }
 nav ul{
     display: flex;
