@@ -25,13 +25,13 @@ h1{
     left: 0;
     top: 30%;
 }
-nav{
+nav ul{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     width: 25%;
 }
-nav ul li{
+nav li{
     max-width: 25%;
     display: inline-block;
 }
