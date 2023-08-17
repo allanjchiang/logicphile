@@ -29,6 +29,7 @@ h1{
     top: 30%;
 }
 nav{
+    height: 30px;
     background-color: #063970;
 }
 nav ul{
