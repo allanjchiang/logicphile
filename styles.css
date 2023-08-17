@@ -31,7 +31,7 @@ nav ul{
     justify-content: space-around;
     width: 100%;
 }
-nav li{
+nav li a{
     max-width: 25%;
     display: inline-block;
     text-decoration: none;
