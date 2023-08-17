@@ -26,4 +26,6 @@ h1{
 }
 nav{
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
