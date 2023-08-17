@@ -24,6 +24,7 @@ h1{
     left: 0;
     top: 30%;
 }
-ul li{
+nav{
+    display: flex;
     justify-content: space-around;
 }
