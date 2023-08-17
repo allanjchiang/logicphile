@@ -18,11 +18,12 @@ h1{
     position: relative;
 }
 
+.banner img {
+    max-width: 100%;
+    width: 100%;
+}
+
 .banner .welcome{
     position: absolute;
 }
 
-img {
-    max-width: 100%;
-    width: 100%;
-}
