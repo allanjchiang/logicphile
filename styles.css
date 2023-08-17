@@ -20,6 +20,7 @@ h1{
     width: 100%;
 }
 .banner .welcome{
+    background-color: ;
     position: absolute;
     left: 0;
     top: 30%;
@@ -28,4 +29,7 @@ nav{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+}
+nav ul li{
+    max-width: 25%;
 }
