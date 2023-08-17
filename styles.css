@@ -29,6 +29,7 @@ nav{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    max-width: 25%;
 }
 nav ul li{
     max-width: 25%;
