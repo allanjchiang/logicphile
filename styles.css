@@ -26,5 +26,7 @@ h1{
 }
 nav{
     display: flex;
+}
+ul{
     justify-content: space-around;
 }
