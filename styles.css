@@ -33,4 +33,5 @@ nav{
 }
 nav ul li{
     max-width: 25%;
+    display: inline;
 }
