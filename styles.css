@@ -49,6 +49,6 @@ nav li a{
     text-decoration: none;
 } */
 .main .description .about {
-    text-align: center;
-    margin: 0 25%;
+    margin: auto;
+    width: 640px;
 }
