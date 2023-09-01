@@ -51,4 +51,5 @@ nav li a{
 .main .description .about {
     margin: auto;
     width: 640px;
+    line-height: 1;
 }
