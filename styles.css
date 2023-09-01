@@ -49,6 +49,10 @@ nav li a{
     display: inline-block;
     text-decoration: none;
 } */
+.main .description h2{
+    text-align: center;
+}
+
 .main .description .about {
     margin: auto;
     width: 640px;
