@@ -48,3 +48,6 @@ nav li a{
     display: inline-block;
     text-decoration: none;
 } */
+.main .description .about {
+    color: white;
+}
