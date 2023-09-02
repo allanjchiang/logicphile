@@ -63,7 +63,10 @@ nav li a{
     color: #333042;
     font-family: sans-serif;
 }
+.footer .social-media {
+    background-color: #063970;
+}
 .footer .social-media a i{
    font-size: 20px;
-   color: #282828;
+   color: #FFFFFF;
 }
