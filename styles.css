@@ -70,7 +70,10 @@ nav li a{
     display: flex;
     justify-content: flex-end;
 }
-.footer .social-media a{
+.footer .social-media #youtube{
+    padding: 0 5% 0 5%;
+}
+.footer .social-media #facebook{
     padding: 0 5% 0 5%;
 }
 .footer .social-media a i{
