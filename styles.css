@@ -70,6 +70,9 @@ nav li a{
     display: flex;
     justify-content: flex-end;
 }
+.footer .social-media #x {
+    padding: 0 5% 0 0; 
+}
 .footer .social-media #youtube{
     padding: 0 0 0 5%;
 }
@@ -80,3 +83,4 @@ nav li a{
    font-size: 20px;
    color: #FFFFFF;
 }
+
