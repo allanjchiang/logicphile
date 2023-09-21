@@ -64,11 +64,15 @@ nav li a{
     color: #333042;
     font-family: sans-serif;
 }
+.footer {
+    background-color: #063970;
+}
+
 .footer .copyright p {
     color: white;
+
 }
 .footer .social-media {
-    background-color: #063970;
     margin: 60px 0 0 0;
     display: flex;
     justify-content: flex-end;
