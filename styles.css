@@ -67,14 +67,15 @@ nav li a{
 .footer {
     background-color: #063970;
 }
-
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+}
 .footer .copyright p {
     color: white;
     max-width: 100%;
     width: 300px;
     font-family: sans-serif;
-    display: flex;
-    justify-content: center;
 
 }
 .footer .social-media {
