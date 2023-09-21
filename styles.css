@@ -69,6 +69,7 @@ nav li a{
     margin: 60px 0 0 0;
     display: flex;
     justify-content: flex-end;
+    padding: 5% 0 5% 0;
 }
 .footer .social-media #x {
     padding: 0 0 0 0; 
