@@ -66,6 +66,7 @@ nav li a{
 }
 .footer .copyright p {
     color: white;
+    justify-content: center;
 }
 .footer .social-media {
     background-color: #063970;
