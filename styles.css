@@ -74,6 +74,8 @@ nav li a{
     max-width: 100%;
     width: 300px;
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
 
 }
 .footer .social-media {
