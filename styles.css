@@ -64,6 +64,9 @@ nav li a{
     color: #333042;
     font-family: sans-serif;
 }
+.footer .copyright p {
+    color: white;
+}
 .footer .social-media {
     background-color: #063970;
     margin: 60px 0 0 0;
