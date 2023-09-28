@@ -96,9 +96,21 @@
 
     }
 
+    .banner {
+
+        position: relative;
+
+    }
+
     .banner img {
 
         width: 100%;
+
+    }
+
+    .banner .welcome h2 {
+
+        
 
     }
 
