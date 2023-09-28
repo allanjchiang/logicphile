@@ -87,6 +87,22 @@
 
 }
 
+@media only screen and (min-width: 768px) {
+
+    .about {
+        background-color: green;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .about { 
+        background-color: purple;
+    }
+
+}
+
 @media only screen and (min-width: 1200px) {
 
     h1{
