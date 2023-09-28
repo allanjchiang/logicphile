@@ -115,6 +115,21 @@
 
     }
 
+    .main .description h2 {
+
+        color: #222222;
+        text-align: center;
+
+    }
+
+    .main .description .about {
+
+        text-align: center;
+        color: #333042;
+        padding: 0 0 4% 0;
+
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
