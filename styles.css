@@ -167,8 +167,10 @@
 
 @media only screen and (min-width: 768px) {
 
-    body {
-        background-color: green;
+    .main .description .about {
+
+        padding: 0 16% 0 16%;
+
     }
 
 }
