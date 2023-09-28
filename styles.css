@@ -89,7 +89,7 @@
 
 @media only screen and (min-width: 768px) {
 
-    .about {
+    body {
         background-color: green;
     }
 
@@ -97,7 +97,7 @@
 
 @media only screen and (min-width: 992px) {
 
-    .about { 
+    body { 
         background-color: purple;
     }
 
