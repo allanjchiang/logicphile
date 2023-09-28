@@ -110,12 +110,8 @@
 
     .banner .welcome {
 
-        position: absolute;
-        left: 0;
-        top: 30%;
-        color: white;
-        background-color: #154c79;
-        padding: 4%;
+        text-align: center;
+        color: #154c79;
 
     }
 
