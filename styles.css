@@ -13,7 +13,123 @@
 
     }
 
-    .banner .welcome h2
+    .banner .welcome h2 {
+
+        text-align: center;
+
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    h1{
+
+        background-color: #063970;
+        color: white;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        margin-top: 0;
+        padding: 30px 0;
+        z-index: 2;
+        font-family: sans-serif;
+    
+    }
+    
+    .banner{
+    
+        position: relative;
+    
+    }
+    
+    .banner img {
+    
+        max-width: 100%;
+        width: 100%;
+    
+    }
+    
+    .banner .welcome {
+    
+        padding: 20px;
+        color: white;
+        background-color: #154c79;
+        position: absolute;
+        left: 0;
+        top: 30%;
+        font-family: sans-serif;
+    
+    }
+
+    .main .description h2{
+
+        text-align: center;
+        color: #222222;
+        font-family: sans-serif;
+    
+    }
+    
+    .main .description .about {
+    
+        margin: auto;
+        width: 640px;
+        font-size: 16px;
+        color: #333042;
+        font-family: sans-serif;
+    
+    }
+    
+    .footer {
+    
+        background-color: #063970;
+    
+    }
+    
+    .footer .copyright p {
+    
+        color: white;
+        max-width: 100%;
+        width: 300px;
+        font-family: sans-serif;
+    
+    }
+    
+    .footer .social-media {
+    
+        margin: 60px 0 0 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 2% 0 2% 0;
+    
+    }
+    
+    .footer .social-media #x {
+    
+        padding: 0 0 0 1%; 
+    
+    }
+    
+    .footer .social-media #youtube {
+    
+        padding: 0 0 0 3%;
+    
+    }
+    
+    .footer .social-media #facebook {
+    
+        padding: 0 25% 0 3%;
+    
+    }
+    
+    .footer .social-media a i {
+    
+       font-size: 20px;
+       color: #FFFFFF;
+    
+    }
 
 }
 
@@ -25,45 +141,7 @@ body{
 
 }
 
-h1{
 
-    background-color: #063970;
-    color: white;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    top: 0;
-    margin-top: 0;
-    padding: 30px 0;
-    z-index: 2;
-    font-family: sans-serif;
-
-}
-
-.banner{
-
-    position: relative;
-
-}
-
-.banner img {
-
-    max-width: 100%;
-    width: 100%;
-
-}
-
-.banner .welcome {
-
-    padding: 20px;
-    color: white;
-    background-color: #154c79;
-    position: absolute;
-    left: 0;
-    top: 30%;
-    font-family: sans-serif;
-
-}
 
 /* nav {
 
@@ -96,71 +174,5 @@ nav li a {
 
 } */
 
-.main .description h2{
 
-    text-align: center;
-    color: #222222;
-    font-family: sans-serif;
-
-}
-
-.main .description .about {
-
-    margin: auto;
-    width: 640px;
-    font-size: 16px;
-    color: #333042;
-    font-family: sans-serif;
-
-}
-
-.footer {
-
-    background-color: #063970;
-
-}
-
-.footer .copyright p {
-
-    color: white;
-    max-width: 100%;
-    width: 300px;
-    font-family: sans-serif;
-
-}
-
-.footer .social-media {
-
-    margin: 60px 0 0 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 2% 0 2% 0;
-
-}
-
-.footer .social-media #x {
-
-    padding: 0 0 0 1%; 
-
-}
-
-.footer .social-media #youtube {
-
-    padding: 0 0 0 3%;
-
-}
-
-.footer .social-media #facebook {
-
-    padding: 0 25% 0 3%;
-
-}
-
-.footer .social-media a i {
-
-   font-size: 20px;
-   color: #FFFFFF;
-
-}
 
