@@ -25,6 +25,13 @@
 
     }
 
+    .main .description h2 {
+
+        color: #222222;
+        text-align: center;
+
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -65,7 +72,7 @@
         position: absolute;
         left: 0;
         top: 30%;
-        font-family: sans-serif;
+        font-family: sans-serif, Verdana, Georgia;
     
     }
 
@@ -73,7 +80,7 @@
 
         text-align: center;
         color: #222222;
-        font-family: sans-serif;
+        font-family: sans-serif, Verdana, Georgia;
     
     }
     
@@ -83,7 +90,7 @@
         width: 640px;
         font-size: 16px;
         color: #333042;
-        font-family: sans-serif;
+        font-family: sans-serif, Verdana, Georgia;
     
     }
     
@@ -98,7 +105,7 @@
         color: white;
         max-width: 100%;
         width: 300px;
-        font-family: sans-serif;
+        font-family: sans-serif, Verdana, Georgia;
     
     }
     
