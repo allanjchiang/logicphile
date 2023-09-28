@@ -197,7 +197,11 @@
 
 @media only screen and (min-width: 1200px) {
 
-    body: background-color: green;
+    body {
+
+        background-color: green;
+
+    }
 
     h1{
 
