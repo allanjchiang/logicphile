@@ -3,6 +3,7 @@
     header h1 {
 
         width: 100%;
+        text-align: center;
 
     }
 
@@ -11,6 +12,8 @@
         width: 100%
 
     }
+
+    .banner .welcome h2
 
 }
 
