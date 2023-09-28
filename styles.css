@@ -56,6 +56,12 @@
      
      }
 
+     .footer .social-media #x {
+
+        padding: 0 1% 0 1%;
+
+     }
+
 }
 
 @media only screen and (min-width: 1200px) {
