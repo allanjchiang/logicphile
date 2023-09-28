@@ -197,6 +197,8 @@
 
 @media only screen and (min-width: 1200px) {
 
+    body: background-color: green;
+
     h1{
 
         background-color: #063970;
