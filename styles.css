@@ -130,6 +130,39 @@
 
     }
 
+    .footer .social-media {
+
+        background-color: #063970;
+        color: white;
+        padding: 1% 0 0 0;
+
+    }
+
+    .footer .social-media .copyright {
+
+        padding: 0 0 0 1.5%;
+
+    }
+
+    .footer .social-media a i {
+    
+        font-size: 20px;
+        color: #FFFFFF;
+     
+     }
+
+     .footer .social-media #x {
+
+        padding: 0 1.5% 0 1.5%;
+
+     }
+
+     .footer .social-media #youtube {
+
+        padding: 0 1.5% 0 0;
+
+     }
+
 }
 
 @media only screen and (min-width: 768px) {
