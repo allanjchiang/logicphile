@@ -32,6 +32,12 @@
 
     }
 
+    .main .description .about {
+
+        text-align: center;
+
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
