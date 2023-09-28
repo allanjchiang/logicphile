@@ -108,9 +108,11 @@
 
     }
 
-    .banner .welcome h2 {
+    .banner .welcome {
 
-        
+        position: absolute;
+        left: 0;
+        top: 30%;
 
     }
 
