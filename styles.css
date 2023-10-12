@@ -58,6 +58,12 @@
 
     }
 
+    .main-nav a:not(:first-child) {
+
+        display: none;
+
+    }
+
     .main-nav.responsive {
         
         position: relative;
