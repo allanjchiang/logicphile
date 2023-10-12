@@ -39,6 +39,10 @@
         display: none;
     }
 
+    .main-nav a {
+        color: white;
+    }
+
     .main .description h2 {
 
         color: #222222;
