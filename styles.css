@@ -58,7 +58,17 @@
 
     }
 
-    .main-nav.responsive {position: relative;}
+    .main-nav.responsive {
+        
+        position: relative;
+
+    }
+
+    .main-nav.responsive a.icon {
+
+        position: absolute;
+
+    }
 
     .main .description h2 {
 
