@@ -245,6 +245,10 @@
 
     }
 
+    .main-nav #myLinks {
+        display: block;
+    }
+
     .main .description .about {
 
         padding: 0 22% 6% 22%;
