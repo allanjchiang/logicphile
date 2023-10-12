@@ -58,6 +58,8 @@
 
     }
 
+    .main-nav.responsive {position: relative;}
+
     .main .description h2 {
 
         color: #222222;
