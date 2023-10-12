@@ -60,6 +60,11 @@
         color: black;
     }
 
+    .active {
+        background-color: #063970;
+        color: white;
+    }
+
     .main .description h2 {
 
         color: #222222;
