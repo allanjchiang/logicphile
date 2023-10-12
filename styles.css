@@ -3,10 +3,6 @@
     background-color: #333;
 }
 
-.main-nav #myLinks {
-    display: none;
-}
-
 .main-nav a {
     color: white;
     padding: 14px 16px;
