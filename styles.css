@@ -47,6 +47,10 @@
         display: block;
     }
 
+    .main-nav a.icon {
+        background: black;
+    }
+
     .main .description h2 {
 
         color: #222222;
