@@ -75,6 +75,7 @@
     .main-nav.responsive a {
 
         float: none;
+        display: block;
 
     }
 
