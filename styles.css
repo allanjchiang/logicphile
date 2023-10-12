@@ -272,6 +272,12 @@
 
     }
 
+    .main-nav a:not(:first-child) {
+
+        display: block;
+
+    }
+
     .main .description .about {
 
         padding: 0 22% 6% 22%;
