@@ -1,8 +1,8 @@
 function myFunction() {
     let x = document.getElementById("myTopnav");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    if (x.className === "main-nav") {
+        x.className += " responsive";
     } else {
-        x.style.display = "block";
+        x.className = "main-nav";
     }
 }
