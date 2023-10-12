@@ -64,6 +64,12 @@
 
     }
 
+    .main-nav a.icon {
+        
+        float: right;
+
+    }
+
     .main-nav.responsive {
         
         position: relative;
