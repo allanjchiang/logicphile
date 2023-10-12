@@ -272,6 +272,12 @@
 
     }
 
+    .main-nav a.icon {
+
+        display: none;
+        
+    }
+
     .main .description .about {
 
         padding: 0 22% 6% 22%;
