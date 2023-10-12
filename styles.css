@@ -42,6 +42,7 @@
     .main-nav a {
         color: white;
         padding: 14px 16px;
+        text-decoration: none;
     }
 
     .main .description h2 {
