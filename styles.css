@@ -35,6 +35,10 @@
         position: relative;
     }
 
+    .main-nav #myLinks {
+        display: none;
+    }
+
     .main .description h2 {
 
         color: #222222;
