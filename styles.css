@@ -55,6 +55,11 @@
         top: 0;
     }
 
+    .main-nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
     .main .description h2 {
 
         color: #222222;
