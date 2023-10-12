@@ -50,6 +50,7 @@
     .main-nav a.icon {
         background: black;
         display: block;
+        position: absolute;
     }
 
     .main .description h2 {
