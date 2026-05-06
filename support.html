@@ -8,9 +8,16 @@
     <title>Workout Tracker Support</title>
     <script>
         (function () {
-            // Localize support URL for Traditional Chinese users.
+            // Localize support URL for Chinese users.
             // Keep this page as the canonical English URL.
             var lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
+            var isZhHans =
+                lang === "zh-hans" ||
+                lang.startsWith("zh-hans-") ||
+                lang === "zh-cn" ||
+                lang.startsWith("zh-cn-") ||
+                lang === "zh-sg" ||
+                lang.startsWith("zh-sg-");
             var isZhHant =
                 lang === "zh-hant" ||
                 lang.startsWith("zh-hant-") ||
@@ -20,6 +27,13 @@
                 lang.startsWith("zh-hk-") ||
                 lang === "zh-mo" ||
                 lang.startsWith("zh-mo-");
+
+            // Prefer script-specific routes to avoid mis-localization.
+            if (isZhHans && !location.pathname.endsWith("/support-zh-hans.html")) {
+                // preserve query/hash if present
+                location.replace("support-zh-hans.html" + location.search + location.hash);
+                return;
+            }
 
             if (isZhHant && !location.pathname.endsWith("/support-zh-hant.html")) {
                 // preserve query/hash if present
