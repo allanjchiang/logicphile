@@ -6,6 +6,27 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Workout Tracker Support</title>
+    <script>
+        (function () {
+            // Localize support URL for Traditional Chinese users.
+            // Keep this page as the canonical English URL.
+            var lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
+            var isZhHant =
+                lang === "zh-hant" ||
+                lang.startsWith("zh-hant-") ||
+                lang === "zh-tw" ||
+                lang.startsWith("zh-tw-") ||
+                lang === "zh-hk" ||
+                lang.startsWith("zh-hk-") ||
+                lang === "zh-mo" ||
+                lang.startsWith("zh-mo-");
+
+            if (isZhHant && !location.pathname.endsWith("/support-zh-hant.html")) {
+                // preserve query/hash if present
+                location.replace("support-zh-hant.html" + location.search + location.hash);
+            }
+        })();
+    </script>
 </head>
 <body>
     <header>
