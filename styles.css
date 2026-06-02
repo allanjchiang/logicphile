@@ -325,22 +325,31 @@ img {
     height: auto;
 }
 
-.main .description .about ul,
-.main .description ul.about {
+.main .description .about-list {
 
+    list-style-type: disc;
+    list-style-position: outside;
     text-align: left;
     width: 90%;
     max-width: 620px;
-    margin: 0 auto 1.5rem;
-    padding-left: 1.25rem;
+    margin: 0 auto 1.25rem;
+    padding: 0 0 0 1.75rem;
     color: #333042;
 
 }
 
-.main .description .about li,
-.main .description ul.about li {
+.main .description .about-list li {
 
-    margin-bottom: 0.75rem;
+    display: list-item;
+    margin-bottom: 0.65rem;
+    padding-left: 0.35rem;
+    line-height: 1.6;
+
+}
+
+.main .description .about-list li:last-child {
+
+    margin-bottom: 0;
 
 }
 
