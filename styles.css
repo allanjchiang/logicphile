@@ -325,6 +325,33 @@ img {
     height: auto;
 }
 
+.main .description .about ul,
+.main .description ul.about {
+
+    text-align: left;
+    width: 90%;
+    max-width: 620px;
+    margin: 0 auto 1.5rem;
+    padding-left: 1.25rem;
+    color: #333042;
+
+}
+
+.main .description .about li,
+.main .description ul.about li {
+
+    margin-bottom: 0.75rem;
+
+}
+
+.main .description .subtitle,
+.main .description .meta {
+
+    color: #555;
+    font-size: 1.05rem;
+
+}
+
 body{
 
     margin-left: 0;
