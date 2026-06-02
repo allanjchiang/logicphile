@@ -10,6 +10,34 @@
         (function () {
             // Localize support URL for Chinese users.
             // Keep this page as the canonical English URL.
+            var storageKey = "logicphile-support-lang";
+            var params = new URLSearchParams(location.search);
+            var forcedLang = params.get("lang");
+
+            if (forcedLang === "en") {
+                try {
+                    sessionStorage.setItem(storageKey, "en");
+                } catch (e) {}
+                if (history.replaceState) {
+                    params.delete("lang");
+                    var query = params.toString();
+                    history.replaceState(
+                        null,
+                        "",
+                        location.pathname +
+                            (query ? "?" + query : "") +
+                            location.hash
+                    );
+                }
+                return;
+            }
+
+            try {
+                if (sessionStorage.getItem(storageKey) === "en") {
+                    return;
+                }
+            } catch (e) {}
+
             var lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
             var isZhHans =
                 lang === "zh-hans" ||
