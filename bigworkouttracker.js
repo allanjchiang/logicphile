@@ -1,6 +1,26 @@
-// Big Workout Tracker page — reveal-on-scroll animation.
-// Adds "bwt-is-visible" to each ".bwt-reveal" element the first time it
-// scrolls into view; bigworkouttracker.css handles the actual transition.
+// Big Workout Tracker page — reveal-on-scroll animation + Play Store QR code.
+// The QR code is rendered entirely client-side (qrcodejs draws it locally,
+// no data is sent to a third-party API); it just encodes the same public
+// Play Store URL as the badge link next to it.
+(function () {
+  "use strict";
+
+  var qrTarget = document.getElementById("bwt-qrcode");
+  if (qrTarget && typeof QRCode !== "undefined") {
+    var storeUrl = qrTarget.closest("a") ? qrTarget.closest("a").href : "";
+    if (storeUrl) {
+      new QRCode(qrTarget, {
+        text: storeUrl,
+        width: 128,
+        height: 128,
+        colorDark: "#063970",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+      });
+    }
+  }
+})();
+
 (function () {
   "use strict";
 
