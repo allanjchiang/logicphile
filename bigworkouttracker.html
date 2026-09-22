@@ -12,6 +12,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Big Workout Tracker</title>
+    <script>
+        (function () {
+            // Localize this page for Chinese users.
+            // Keep this page as the canonical English URL.
+            var storageKey = "logicphile-bigworkouttracker-lang";
+            var params = new URLSearchParams(location.search);
+            var forcedLang = params.get("lang");
+
+            if (forcedLang === "en") {
+                try {
+                    sessionStorage.setItem(storageKey, "en");
+                } catch (e) {}
+                if (history.replaceState) {
+                    params.delete("lang");
+                    var query = params.toString();
+                    history.replaceState(
+                        null,
+                        "",
+                        location.pathname +
+                            (query ? "?" + query : "") +
+                            location.hash
+                    );
+                }
+                return;
+            }
+
+            try {
+                if (sessionStorage.getItem(storageKey) === "en") {
+                    return;
+                }
+            } catch (e) {}
+
+            var lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
+            var isZhHans =
+                lang === "zh-hans" ||
+                lang.startsWith("zh-hans-") ||
+                lang === "zh-cn" ||
+                lang.startsWith("zh-cn-") ||
+                lang === "zh-sg" ||
+                lang.startsWith("zh-sg-");
+            var isZhHant =
+                lang === "zh-hant" ||
+                lang.startsWith("zh-hant-") ||
+                lang === "zh-tw" ||
+                lang.startsWith("zh-tw-") ||
+                lang === "zh-hk" ||
+                lang.startsWith("zh-hk-") ||
+                lang === "zh-mo" ||
+                lang.startsWith("zh-mo-");
+
+            // Prefer script-specific routes to avoid mis-localization.
+            if (isZhHans && !location.pathname.endsWith("/bigworkouttracker-zh-hans.html")) {
+                // preserve query/hash if present
+                location.replace("bigworkouttracker-zh-hans.html" + location.search + location.hash);
+                return;
+            }
+
+            if (isZhHant && !location.pathname.endsWith("/bigworkouttracker-zh-hant.html")) {
+                // preserve query/hash if present
+                location.replace("bigworkouttracker-zh-hant.html" + location.search + location.hash);
+            }
+        })();
+    </script>
 </head>
 <body class="bwt-page">
     <header>

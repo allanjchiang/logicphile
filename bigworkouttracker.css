@@ -76,6 +76,16 @@
   color: var(--bwt-text-muted);
   font-size: 1.15rem;
 }
+.bwt-lang-switch{
+  margin: 22px 0 0;
+  font-size: 0.92rem;
+  color: var(--bwt-text-muted);
+}
+.bwt-lang-switch a{
+  color: var(--bwt-navy);
+  font-weight: 600;
+  text-decoration: underline;
+}
 
 /* ---------- Feature sections ---------- */
 .bwt-features{

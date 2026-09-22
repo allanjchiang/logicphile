@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Big Workout Tracker 是一款使用 Flutter 開發的健身記錄 App，具備訓練規律月曆、詳細統計、無限訓練範本，以及訓練途中查看歷史紀錄等功能。">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="bigworkouttracker.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Big Workout Tracker（繁體中文介紹）</title>
+</head>
+<body class="bwt-page">
+    <header>
+        <h1>Logicphile</h1>
+    </header>
+
+    <section class="bwt-hero">
+        <div class="bwt-container">
+            <img class="bwt-hero-icon" src="bigworkouttracker-images/app_icon.png" alt="Big Workout Tracker App 圖示">
+            <span class="bwt-eyebrow">使用 Flutter 開發</span>
+            <h2>一款不會妨礙你訓練的健身記錄工具</h2>
+            <p class="bwt-lead">Big Workout Tracker 採用簡單、友善的介面設計，讓你記錄每一組動作、查看訓練進度、規劃下一次訓練，每次打開都輕鬆上手。</p>
+            <p class="bwt-lang-switch">
+                <a href="bigworkouttracker.html?lang=en">English</a> ・
+                <a href="bigworkouttracker-zh-hans.html">简体中文</a>
+            </p>
+        </div>
+    </section>
+
+    <main class="bwt-features">
+
+        <!-- Feature 1: Consistency Calendar (image left / copy right) -->
+        <section class="bwt-feature bwt-feature--calendar">
+            <div class="bwt-container bwt-feature-inner">
+                <div class="bwt-feature-media">
+                    <div class="bwt-media-glow"></div>
+                    <div class="bwt-reveal bwt-reveal-left bwt-phone-float">
+                        <div class="bwt-phone-frame">
+                            <img src="bigworkouttracker-images/consistency_calendar_zh-hant.png" alt="訓練規律月曆畫面，依部位用顏色標示每天的訓練">
+                        </div>
+                    </div>
+                </div>
+                <div class="bwt-feature-copy bwt-reveal bwt-reveal-right">
+                    <span class="bwt-eyebrow">保持規律</span>
+                    <h3>月曆讓你一眼看見訓練規律</h3>
+                    <p>每次記錄訓練，月曆上就會出現對應的顏色，讓你一眼看到整個月的訓練狀況。每種顏色都代表你自訂的訓練類型，方便你發現規律，並在漏練變成長期空窗前及時察覺。</p>
+                    <ul>
+                        <li><span class="bwt-tick">✓</span> 每種自訂訓練類型都有專屬顏色標示</li>
+                        <li><span class="bwt-tick">✓</span> 點一下任何一天，即可查看當天訓練內容</li>
+                        <li><span class="bwt-tick">✓</span> 自由切換月份，回顧過去的訓練紀錄</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 2: Detailed Statistics (image right / copy left) -->
+        <section class="bwt-feature bwt-feature--stats bwt-reverse">
+            <div class="bwt-container bwt-feature-inner">
+                <div class="bwt-feature-media">
+                    <div class="bwt-media-glow"></div>
+                    <div class="bwt-reveal bwt-reveal-right bwt-phone-float">
+                        <div class="bwt-phone-frame">
+                            <img src="bigworkouttracker-images/statistics_zh-hant.png" alt="統計畫面顯示預估單次最大重量（1RM）隨時間變化的進度圖表">
+                        </div>
+                    </div>
+                </div>
+                <div class="bwt-feature-copy bwt-reveal bwt-reveal-left">
+                    <span class="bwt-eyebrow">追蹤你的進步</span>
+                    <h3>每個動作都有詳細統計數據</h3>
+                    <p>你記錄的每一組動作都會轉換成清楚的進度圖表，包括重量、次數，以及預估的單次最大重量（1RM）。選擇任何動作與時間範圍，從最近一週到訓練以來的所有紀錄，清楚看見自己的進步。</p>
+                    <ul>
+                        <li><span class="bwt-tick">✓</span> 重量、次數與預估 1RM 的互動式圖表</li>
+                        <li><span class="bwt-tick">✓</span> 彈性選擇時間範圍，從一週到全部紀錄</li>
+                        <li><span class="bwt-tick">✓</span> 清楚掌握每個動作的長期趨勢</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 3: Unlimited workout templates (image left / copy right) -->
+        <section class="bwt-feature bwt-feature--templates">
+            <div class="bwt-container bwt-feature-inner">
+                <div class="bwt-feature-media">
+                    <div class="bwt-media-glow"></div>
+                    <div class="bwt-reveal bwt-reveal-left bwt-phone-float">
+                        <div class="bwt-phone-frame">
+                            <img src="bigworkouttracker-images/workout_homepage_zh-hant.png" alt="「我的訓練」畫面，可長按拖曳排序，並建立不限數量的訓練範本">
+                        </div>
+                    </div>
+                </div>
+                <div class="bwt-feature-copy bwt-reveal bwt-reveal-right">
+                    <span class="bwt-eyebrow">打造你的訓練菜單</span>
+                    <h3>無限量的訓練範本</h3>
+                    <p>依照自己的訓練需求，建立不限數量的訓練範本，完全依照你喜歡的方式安排。依部位、分化或訓練習慣將動作分組，再用長按拖曳輕鬆排序。要開始訓練時，只需輕點一下即可開始。</p>
+                    <ul>
+                        <li><span class="bwt-tick">✓</span> 依照你的每個訓練計畫建立不限數量的範本</li>
+                        <li><span class="bwt-tick">✓</span> 長按拖曳即可重新排序動作與訓練</li>
+                        <li><span class="bwt-tick">✓</span> 從自己整理好的清單立即開始訓練</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 4: View history mid-workout (image right / copy left) -->
+        <section class="bwt-feature bwt-feature--history bwt-reverse">
+            <div class="bwt-container bwt-feature-inner">
+                <div class="bwt-feature-media">
+                    <div class="bwt-media-glow"></div>
+                    <div class="bwt-reveal bwt-reveal-right bwt-phone-float">
+                        <div class="bwt-phone-frame">
+                            <img src="bigworkouttracker-images/history_mid_workout_zh-hant.png" alt="訓練途中打開歷史紀錄面板，顯示先前的組數與次數">
+                        </div>
+                    </div>
+                </div>
+                <div class="bwt-feature-copy bwt-reveal bwt-reveal-left">
+                    <span class="bwt-eyebrow">訓練時掌握脈絡</span>
+                    <h3>訓練途中也能查看歷史紀錄</h3>
+                    <p>不用再猜測上次舉了多重。訓練進行到一半時，打開任何動作的歷史紀錄，即可查看先前的組數、次數與重量，在最需要的當下取得資訊，讓你更有把握地決定如何進步。</p>
+                    <ul>
+                        <li><span class="bwt-tick">✓</span> 不必離開目前訓練，即可查看過去的組數與次數</li>
+                        <li><span class="bwt-tick">✓</span> 一眼看見每個動作先前的最佳表現</li>
+                        <li><span class="bwt-tick">✓</span> 即時掌握資訊，做出更明智的重量與次數決定</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="bwt-highlights">
+        <div class="bwt-container">
+            <h3 class="bwt-reveal bwt-reveal-up">用心打造的細節</h3>
+            <p class="bwt-lead bwt-reveal bwt-reveal-up">除了核心訓練追蹤功能，Big Workout Tracker 也為每一位訓練者打造了友善的介面。</p>
+            <div class="bwt-highlight-grid">
+                <div class="bwt-highlight-card bwt-reveal bwt-reveal-up">
+                    <div class="bwt-icon">🔒</div>
+                    <h4>隱私優先</h4>
+                    <p>你的訓練資料只會儲存在你的裝置上，使用本 App 不需要註冊帳號。</p>
+                </div>
+                <div class="bwt-highlight-card bwt-reveal bwt-reveal-up">
+                    <div class="bwt-icon">🌏</div>
+                    <h4>支援多國語言</h4>
+                    <p>介面提供英文與繁體中文，未來將持續加入更多語言。</p>
+                </div>
+                <div class="bwt-highlight-card bwt-reveal bwt-reveal-up">
+                    <div class="bwt-icon">🧩</div>
+                    <h4>完全客製化</h4>
+                    <p>自訂訓練類型、顏色與範本，讓 App 完全配合你的訓練方式。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bwt-cta">
+        <div class="bwt-container">
+            <h3 class="bwt-reveal bwt-reveal-up">已在 Google Play 上架</h3>
+            <p class="bwt-lead bwt-reveal bwt-reveal-up">使用手機相機掃描 QR Code，或直接點選圖示，即可開啟 Big Workout Tracker 的 Google Play 頁面。</p>
+            <div class="bwt-cta-row bwt-reveal bwt-reveal-up">
+                <a class="bwt-qr-link" href="https://play.google.com/store/apps/details?id=com.logicphile.workouttracker" aria-label="在 Google Play 開啟 Big Workout Tracker">
+                    <div id="bwt-qrcode" class="bwt-qrcode"></div>
+                </a>
+                <a class="bwt-badge-link" href="https://play.google.com/store/apps/details?id=com.logicphile.workouttracker">
+                    <img class="bwt-badge" src="https://play.google.com/intl/zh-tw/badges/static/images/badges/zh-tw_badge_web_generic.png" alt="下載 Google Play App">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-media">
+            <div class="copyright">
+                <p>© 2026 Logicphile Limited. All rights reserved.</p>
+                <p>Big Workout Tracker</p>
+            </div>
+            <a href="https://x.com/allanviolin" id="x">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.youtube.com/@allanviolin" id="youtube">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/logicphile" id="facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="bigworkouttracker.js"></script>
+</body>
+</html>
