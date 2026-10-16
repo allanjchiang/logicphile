@@ -283,10 +283,16 @@
 }
 .bwt-cta-row{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 28px;
+  gap: 96px;
   flex-wrap: wrap;
+}
+.bwt-store{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 .bwt-qr-link{
   display: inline-block;
@@ -311,11 +317,18 @@
   height: 64px;
   width: auto;
 }
+/* Google's badge PNG has built-in padding; Apple's SVG has none, so size it
+   to match the visible height of the Google badge. */
+.bwt-badge-apple{
+  height: 44px;
+  margin: 10px 0;
+}
 
 @media (max-width: 480px){
-  .bwt-cta-row{ gap: 20px; }
+  .bwt-cta-row{ gap: 32px; }
   .bwt-qrcode{ width: 112px; height: 112px; }
   .bwt-badge{ height: 56px; }
+  .bwt-badge-apple{ height: 38px; margin: 9px 0; }
 }
 
 /* ---------- Animations ---------- */

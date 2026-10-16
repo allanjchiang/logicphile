@@ -1,12 +1,13 @@
-// Big Workout Tracker page — reveal-on-scroll animation + Play Store QR code.
-// The QR code is rendered entirely client-side (qrcodejs draws it locally,
-// no data is sent to a third-party API); it just encodes the same public
-// Play Store URL as the badge link next to it.
+// Big Workout Tracker page — reveal-on-scroll animation + store QR codes.
+// The QR codes are rendered entirely client-side (qrcodejs draws them locally,
+// no data is sent to a third-party API); each one encodes the same public
+// store URL as the link wrapped around it (App Store or Google Play).
 (function () {
   "use strict";
 
-  var qrTarget = document.getElementById("bwt-qrcode");
-  if (qrTarget && typeof QRCode !== "undefined") {
+  if (typeof QRCode === "undefined") return;
+
+  document.querySelectorAll(".bwt-qrcode").forEach(function (qrTarget) {
     var storeUrl = qrTarget.closest("a") ? qrTarget.closest("a").href : "";
     if (storeUrl) {
       new QRCode(qrTarget, {
@@ -18,7 +19,7 @@
         correctLevel: QRCode.CorrectLevel.H
       });
     }
-  }
+  });
 })();
 
 (function () {
