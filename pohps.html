@@ -3,146 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="POHPS: Vegetarian Protein helps vegetarians and vegans track daily protein, iron, calcium, vitamin B12 and water, with one-tap logging, custom foods, statistics and a goal calendar.">
     <link rel="canonical" href="https://logicphile.com/pohps">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="pohps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>POHPS — Support, Privacy &amp; Disclaimer</title>
+    <title>POHPS: Vegetarian Protein</title>
 </head>
-<body>
+<body class="ph-page">
     <header>
         <h1>Logicphile</h1>
     </header>
 
-    <section class="main" id="support">
-        <div class="description">
-            <h2>POHPS</h2>
-            <p class="about subtitle">Protein Tracker for Lacto-Ovo Vegetarians</p>
-            <p class="about meta">
-                App ID: <code>com.logicphile.pohps</code><br>
-                Published by Logicphile Limited
-            </p>
+    <section class="ph-hero">
+        <div class="ph-container">
+            <img class="ph-hero-icon" src="pohps-images/app_icon.png" alt="POHPS app icon">
+            <span class="ph-eyebrow">For Vegetarians and Vegans</span>
+            <h2>POHPS: Vegetarian Protein</h2>
+            <p class="ph-lead">Track daily protein, iron, calcium, B12 and water on a plant-based diet.</p>
+            <p class="ph-sublead">Set a daily protein goal, log what you eat in a single tap, and watch a progress ring fill up as your day goes on. POHPS also keeps an eye on the nutrients that vegetarian and vegan diets can run short on, all in a calm, easy-to-read design.</p>
+            <a class="ph-hero-cta" href="#download">Get the App <i class="bi bi-arrow-down-short" aria-hidden="true"></i></a>
         </div>
     </section>
 
-    <section class="main">
-        <div class="description">
-            <h2>Support</h2>
-            <p class="about">
-                POHPS is a free, open-source app designed to help lacto-ovo vegetarians
-                track daily protein (and optional water) intake. There are no ads, paywalls,
-                or in-app purchases.
-            </p>
-            <p class="about"><strong>How to get help</strong></p>
-            <ul class="about-list">
-                <li>Email us at <a href="mailto:allan@logicphile.com">allan@logicphile.com</a></li>
-                <li>Include your device model, Android/iOS version, and app version (shown in Settings → About POHPS)</li>
-                <li>Describe what you were trying to do and what happened</li>
-            </ul>
-            <p class="about">
-                We aim to respond within a few business days. We cannot provide medical or
-                dietary advice by email—please speak with your doctor or registered dietitian
-                for personal health guidance.
-            </p>
+    <main class="ph-features">
+
+        <!-- Feature 1: Dashboard (image left / copy right) -->
+        <section class="ph-feature ph-feature--dashboard">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-left ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/protein_tracker.png" alt="Dashboard with a protein progress ring showing 82g of a 68g goal, a B12 check-off, a nutrition tip and the day's foods" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-right">
+                    <span class="ph-eyebrow">Your Day at a Glance</span>
+                    <h3>A Protein Ring That Fills Up as You Eat</h3>
+                    <p>The dashboard shows your progress toward today's protein goal in a single ring. Each food you log adds to the total, and when you reach your goal, a short celebration lets you know. Swipe the ring sideways to switch to water, iron and calcium, depending on which trackers you turn on in Settings.</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> A daily protein goal you set yourself, such as the one your dietitian recommends</li>
+                        <li><span class="ph-tick">✓</span> Optional water, iron, calcium and vitamin B12 tracking</li>
+                        <li><span class="ph-tick">✓</span> Swipe the date to look back at previous days</li>
+                        <li><span class="ph-tick">✓</span> Note the time of each food and, if you like, how much you enjoyed it</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 2: Add food (image right / copy left) -->
+        <section class="ph-feature ph-feature--add ph-reverse">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-right ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/add_food.png" alt="Add Food sheet with a search bar, category filters and a grid of favorite foods showing protein per serving" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-left">
+                    <span class="ph-eyebrow">One-Tap Logging</span>
+                    <h3>Add a Food With a Single Tap</h3>
+                    <p>Open Add Food, find what you ate, and tap it. That's all it takes to log it. POHPS includes about 100 everyday vegetarian foods, each showing its protein, water, iron and calcium per serving, so you can see what a food contributes before you add it.</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> Search by name, or browse categories such as Beverages and Dairy &amp; Eggs</li>
+                        <li><span class="ph-tick">✓</span> Star the foods you eat most so they appear first under Favorites</li>
+                        <li><span class="ph-tick">✓</span> Food lists adapt to your diet: Lacto-Ovo, Vegan, Allium Vegetarian or Allium Vegan</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 3: Custom food (image left / copy right) -->
+        <section class="ph-feature ph-feature--custom">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-left ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/add_custom_food.png" alt="Create Custom Food screen with a food or supplement toggle, an icon picker, name and serving size fields, and an Add Ingredient button" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-right">
+                    <span class="ph-eyebrow">Your Own Recipes</span>
+                    <h3>Create Custom Foods From Your Own Ingredients</h3>
+                    <p>Have a favorite smoothie or a family recipe? Create it once and log it with a tap whenever you have it again. Build a food from ingredients in the database and POHPS adds up the protein and water for you, or enter the protein yourself from a nutrition label.</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> Create as many custom foods and supplements as you need</li>
+                        <li><span class="ph-tick">✓</span> Pick an icon, a name and a serving size you'll recognize</li>
+                        <li><span class="ph-tick">✓</span> Combine ingredients, or type in protein values by hand</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 4: Statistics (image right / copy left) -->
+        <section class="ph-feature ph-feature--stats ph-reverse">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-right ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/statistics.png" alt="Statistics screen with a monthly protein trend chart against a 68g goal line, and a list of top protein sources" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-left">
+                    <span class="ph-eyebrow">See Your Trends</span>
+                    <h3>Statistics That Show Where Your Protein Comes From</h3>
+                    <p>The Protein Trend chart plots your daily intake against your goal line, so it's easy to see which days came up short. Below it, Top Protein Sources ranks the foods that contributed the most protein, with grams and a percentage for each.</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> View by week, month, year or year to date</li>
+                        <li><span class="ph-tick">✓</span> See which foods do the most to help you reach your goal</li>
+                        <li><span class="ph-tick">✓</span> Use what you learn to plan your meals</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 5: Calendar (image left / copy right) -->
+        <section class="ph-feature ph-feature--calendar">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-left ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/calendar.png" alt="Goal Calendar for October 2026 with goal-met days shaded green, and an Export to Excel button" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-right">
+                    <span class="ph-eyebrow">Build Consistency</span>
+                    <h3>A Goal Calendar for Every Month</h3>
+                    <p>Every day you reach your protein goal turns green on the Goal Calendar. A month of shaded days shows your streaks at a glance, and the gaps show where to focus next.</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> Green for goal met, gray for goal not met</li>
+                        <li><span class="ph-tick">✓</span> Move between months to review your history</li>
+                        <li><span class="ph-tick">✓</span> Export your history to an Excel file to keep or share with your dietitian</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 6: Achievements (image right / copy left) -->
+        <section class="ph-feature ph-feature--achievements ph-reverse">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-right ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/achievements.png" alt="Achievements list including First Bite, Halfway There, Goal Getter, Chef's Special, Three-Day Streak and Week Warrior" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-left">
+                    <span class="ph-eyebrow">Celebrate Milestones</span>
+                    <h3>Achievements That Mark Your Progress</h3>
+                    <p>Achievements unlock as you go, from logging your first food to reaching your goal 30 days in a row. Tap the trophy icon on the dashboard any time to see every achievement you've earned.</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> First Bite, Halfway There and Goal Getter for your daily progress</li>
+                        <li><span class="ph-tick">✓</span> Chef's Special when you create your first custom food</li>
+                        <li><span class="ph-tick">✓</span> Streak achievements at 3, 7 and 30 days in a row</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="ph-highlights">
+        <div class="ph-container">
+            <h3 class="ph-reveal ph-reveal-up">Designed With Care</h3>
+            <p class="ph-lead ph-reveal ph-reveal-up">POHPS is designed to be clear and comfortable to use every day.</p>
+            <div class="ph-highlight-grid">
+                <div class="ph-highlight-card ph-reveal ph-reveal-up">
+                    <div class="ph-icon" aria-hidden="true">🔒</div>
+                    <h4>Private by Design</h4>
+                    <p>Your logs stay on your device. There's no account to create, and you can back up your data to a file and restore it later.</p>
+                </div>
+                <div class="ph-highlight-card ph-reveal ph-reveal-up">
+                    <div class="ph-icon" aria-hidden="true">👓</div>
+                    <h4>Easy to Read</h4>
+                    <p>Large text, big tap targets and high-contrast colors, in light or dark mode.</p>
+                </div>
+                <div class="ph-highlight-card ph-reveal ph-reveal-up">
+                    <div class="ph-icon" aria-hidden="true">🌏</div>
+                    <h4>Three Languages</h4>
+                    <p>Use POHPS in English, Traditional Chinese or Simplified Chinese, with metric or imperial units.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="main" id="privacy">
-        <div class="description">
-            <h2>Privacy Policy</h2>
-            <p class="about"><em>Last updated: June 2026</em></p>
-            <p class="about">
-                Logicphile Limited (“we”, “us”) respects your privacy. This policy describes
-                how the POHPS mobile application handles information.
-            </p>
-
-            <p class="about"><strong>Summary</strong></p>
-            <ul class="about-list">
-                <li>We do <strong>not</strong> collect personal data on our servers.</li>
-                <li>All app data (daily logs, goals, custom foods, settings) is stored <strong>locally on your device only</strong>.</li>
-                <li>We do <strong>not</strong> use analytics, advertising, or third-party tracking SDKs in the app.</li>
-                <li>There are no accounts, logins, or cloud sync in the current version.</li>
-            </ul>
-
-            <p class="about"><strong>Data stored on your device</strong></p>
-            <p class="about">May include:</p>
-            <ul class="about-list">
-                <li>Daily protein and water intake logs</li>
-                <li>Your daily protein goal and app preferences (language, units, diet type, etc.)</li>
-                <li>Custom foods you create and optional protein overrides for certain items</li>
-                <li>Whether you accepted the in-app disclaimer</li>
-            </ul>
-            <p class="about">
-                This data remains on your device until you delete the app or clear app data
-                in your device settings. Uninstalling the app removes locally stored data.
-            </p>
-
-            <p class="about"><strong>Data we do not collect</strong></p>
-            <ul class="about-list">
-                <li>Name, email, phone number, or address (unless you voluntarily email support)</li>
-                <li>Location, contacts, photos, or microphone/camera data</li>
-                <li>Health data transmitted to our servers (we have no servers for app data)</li>
-            </ul>
-
-            <p class="about"><strong>Support emails</strong></p>
-            <p class="about">
-                If you contact us by email, we receive only what you choose to send (e.g. your
-                email address and message content). We use that information only to respond to
-                your request and do not sell it to third parties.
-            </p>
-
-            <p class="about"><strong>Children</strong></p>
-            <p class="about">
-                POHPS is not directed at children under 13. We do not knowingly collect
-                personal information from children.
-            </p>
-
-            <p class="about"><strong>Changes</strong></p>
-            <p class="about">
-                We may update this policy from time to time. The “Last updated” date above
-                will change when we do. Continued use of the app after changes means you accept
-                the updated policy.
-            </p>
-
-            <p class="about"><strong>Contact</strong></p>
-            <p class="about">
-                Logicphile Limited<br>
-                Email: <a href="mailto:allan@logicphile.com">allan@logicphile.com</a>
-            </p>
-        </div>
-    </section>
-
-    <section class="main" id="disclaimer">
-        <div class="description">
-            <h2>Disclaimer</h2>
-            <p class="about">Please read carefully before using POHPS:</p>
-            <ul class="about-list">
-                <li>
-                    This app is <strong>not</strong> a substitute for professional medical or dietary
-                    advice. Always consult your doctor or registered dietitian before making
-                    changes to your diet.
-                </li>
-                <li>
-                    Protein and water values shown in the app are <strong>approximate estimates</strong>
-                    and may vary depending on brands, preparation methods, and serving sizes.
-                </li>
-                <li>
-                    This app is provided <strong>“AS-IS”</strong> without any warranties of any kind,
-                    either express or implied, including but not limited to fitness for a particular purpose.
-                </li>
-                <li>
-                    You use this app entirely at your own risk. The developers accept
-                    <strong>no liability</strong> for any health outcomes resulting from use of this app.
-                </li>
-                <li>
-                    No personal data is collected by the app. All information is stored locally on your device only.
-                </li>
-                <li>
-                    POHPS is free, open-source software. There are no ads, no paywalls, and no in-app purchases.
-                </li>
-            </ul>
-            <p class="about">
-                By using POHPS, you acknowledge that you have read, understood, and agree to these terms.
-                The same disclaimer is shown when you first open the app.
+    <section class="ph-cta" id="download">
+        <div class="ph-container">
+            <h3 class="ph-reveal ph-reveal-up">Available on Google Play</h3>
+            <p class="ph-lead ph-reveal ph-reveal-up">Scan the code with your phone's camera, or tap the badge, to open POHPS on Google Play.</p>
+            <div class="ph-cta-row ph-reveal ph-reveal-up">
+                <div class="ph-store">
+                    <a class="ph-qr-link" href="https://play.google.com/store/apps/details?id=com.logicphile.pohps" aria-label="Open POHPS on Google Play">
+                        <div class="ph-qrcode"></div>
+                    </a>
+                    <a class="ph-badge-link" href="https://play.google.com/store/apps/details?id=com.logicphile.pohps">
+                        <img class="ph-badge" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </div>
+            <p class="ph-disclaimer ph-reveal ph-reveal-up">POHPS is not a substitute for professional medical or dietary advice. Nutrient values are approximate. Talk to your doctor or registered dietitian before changing your diet.</p>
+            <p class="ph-support-links ph-reveal ph-reveal-up">
+                <a href="pohps-support.html#support">Support</a>
+                <span aria-hidden="true">·</span>
+                <a href="pohps-support.html#privacy">Privacy Policy</a>
+                <span aria-hidden="true">·</span>
+                <a href="pohps-support.html#disclaimer">Disclaimer</a>
             </p>
         </div>
     </section>
@@ -151,7 +231,7 @@
         <div class="social-media">
             <div class="copyright">
                 <p>© 2026 Logicphile Limited. All rights reserved.</p>
-                <p>POHPS — Package: com.logicphile.pohps</p>
+                <p>POHPS: Vegetarian Protein</p>
             </div>
             <a href="https://x.com/allanviolin" id="x">
                 <i class="bi bi-twitter-x"></i>
@@ -164,5 +244,8 @@
             </a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="pohps.js"></script>
 </body>
 </html>
