@@ -25,25 +25,35 @@
   background: var(--ph-bg);
 }
 
-/* Traditional Chinese page: Latin glyphs from Open Sans, CJK from Noto Sans TC.
+/* Chinese pages: Latin glyphs from Open Sans, CJK from Noto Sans TC / SC.
    Negative tracking and uppercase styling suit Latin text only. */
 .ph-page:lang(zh-Hant){
   font-family: 'Open Sans', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
-  line-height: 1.8;
 }
-.ph-page:lang(zh-Hant) h2,
-.ph-page:lang(zh-Hant) h3{ letter-spacing: 0.5px; }
-.ph-page:lang(zh-Hant) .ph-eyebrow{ letter-spacing: 2px; }
+.ph-page:lang(zh-Hans){
+  font-family: 'Open Sans', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.ph-page:lang(zh){ line-height: 1.8; }
+.ph-page:lang(zh) h2,
+.ph-page:lang(zh) h3{ letter-spacing: 0.5px; }
+.ph-page:lang(zh) .ph-eyebrow{ letter-spacing: 2px; }
 
 .ph-page *{ box-sizing: border-box; }
 
 /* ---------- Language switch ---------- */
+/* Each page sets on the <nav>:
+     --ph-lang-count  number of languages offered (default 2)
+     --ph-lang-pos    0-based position of the current language
+   The indicator pill slides to --ph-lang-pos; pohps.js updates it on click. */
 /* Wrapper used on the support pages, which don't use .ph-page */
 .ph-lang-row{ text-align: center; padding-top: 24px; }
 .ph-lang-switch{
+  --ph-lang-count: 2;
+  --ph-lang-pos: 0;
   position: relative;
   display: inline-grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(var(--ph-lang-count), 1fr);
+  max-width: 100%;
   margin: 0 auto 32px;
   padding: 5px;
   border-radius: 999px;
@@ -54,19 +64,21 @@
 .ph-lang-switch a{
   position: relative;
   z-index: 1;
-  min-width: 128px;
-  padding: 8px 20px;
+  min-width: 112px;
+  padding: 8px 16px;
   border-radius: 999px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
+  white-space: nowrap;
   text-decoration: none;
   color: var(--ph-olive);
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, background 0.3s ease;
 }
 .ph-lang-switch a[lang="zh-Hant"]{ font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; }
-.ph-lang-switch a:not([aria-current]):hover{ color: var(--ph-olive-deep); }
+.ph-lang-switch a[lang="zh-Hans"]{ font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+.ph-lang-switch a:not([aria-current]):hover{ color: var(--ph-olive-deep); background: rgba(85,107,47,0.08); }
 .ph-lang-switch a:focus-visible{ outline: 3px solid var(--ph-khaki); outline-offset: 2px; }
 .ph-lang-switch a[aria-current="page"]{ color: #fff; }
 .ph-lang-indicator{
@@ -74,19 +86,20 @@
   top: 5px;
   bottom: 5px;
   left: 5px;
-  width: calc(50% - 5px);
+  width: calc((100% - 10px) / var(--ph-lang-count));
   border-radius: 999px;
   background: var(--ph-olive);
   box-shadow: 0 6px 14px -6px rgba(47,58,34,0.6);
-  transition: transform 0.35s cubic-bezier(.4,.1,.2,1);
+  transform: translateX(calc(var(--ph-lang-pos) * 100%));
+  transition: transform 0.4s cubic-bezier(.4,.1,.2,1);
 }
-/* Indicator sits under the current link (right side on the zh-Hant page) */
-.ph-lang-switch--right .ph-lang-indicator{ transform: translateX(100%); }
-/* While switching, slide the indicator to the other side and swap colors */
-.ph-lang-switch.ph-switching .ph-lang-indicator{ transform: translateX(100%); }
-.ph-lang-switch--right.ph-switching .ph-lang-indicator{ transform: translateX(0); }
+/* While switching, the chosen link turns white and the old one olive */
 .ph-lang-switch.ph-switching a[aria-current="page"]{ color: var(--ph-olive); }
-.ph-lang-switch.ph-switching a:not([aria-current]){ color: #fff; }
+.ph-lang-switch.ph-switching a.ph-lang-target{ color: #fff; background: none; }
+
+@media (max-width: 420px){
+  .ph-lang-switch a{ min-width: 0; padding: 8px 12px; }
+}
 
 .ph-page.ph-leaving{
   opacity: 0;

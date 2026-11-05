@@ -56,9 +56,9 @@
 (function () {
   "use strict";
 
-  // On a Traditional Chinese page, drop any earlier "stay on English" choice so
-  // later visits to the English pages redirect here again.
-  if (document.documentElement.lang === "zh-Hant") {
+  // On a Chinese page, drop any earlier "stay on English" choice so later
+  // visits to the English pages redirect to Chinese again.
+  if (document.documentElement.lang.indexOf("zh") === 0) {
     try {
       sessionStorage.removeItem("logicphile-pohps-lang");
     } catch (e) {}
@@ -69,6 +69,8 @@
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   document.querySelectorAll(".ph-lang-switch").forEach(function (nav) {
+    var links = Array.prototype.slice.call(nav.querySelectorAll("a"));
+
     nav.addEventListener("click", function (event) {
       var link = event.target.closest("a");
       if (!link || link.getAttribute("aria-current") === "page") {
@@ -82,22 +84,28 @@
       if (reduceMotion) return;
 
       event.preventDefault();
+      nav.style.setProperty("--ph-lang-pos", String(links.indexOf(link)));
+      link.classList.add("ph-lang-target");
       nav.classList.add("ph-switching");
       window.setTimeout(function () {
         document.body.classList.add("ph-leaving");
-      }, 200);
+      }, 240);
       window.setTimeout(function () {
         window.location.href = link.href;
-      }, 430);
+      }, 480);
     });
   });
 
-  // Undo the fade if the page is restored from the back/forward cache.
+  // Undo the slide and fade if the page is restored from the back/forward cache.
   window.addEventListener("pageshow", function (event) {
     if (!event.persisted) return;
     document.body.classList.remove("ph-leaving");
     document.querySelectorAll(".ph-lang-switch.ph-switching").forEach(function (nav) {
+      var links = Array.prototype.slice.call(nav.querySelectorAll("a"));
+      var current = nav.querySelector('a[aria-current="page"]');
+      nav.style.setProperty("--ph-lang-pos", String(links.indexOf(current)));
       nav.classList.remove("ph-switching");
+      links.forEach(function (a) { a.classList.remove("ph-lang-target"); });
     });
   });
 })();

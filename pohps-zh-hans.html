@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="POHPS：素食蛋白质，帮助素食者与全素者追踪每日蛋白质、铁质、钙质、维生素 B12 与水分，提供一键记录、自定义食物、统计图表与目标日历。">
+    <link rel="canonical" href="https://logicphile.com/pohps-zh-hans">
+    <link rel="alternate" hreflang="en" href="https://logicphile.com/pohps">
+    <link rel="alternate" hreflang="zh-Hant" href="https://logicphile.com/pohps-zh-hant">
+    <link rel="alternate" hreflang="zh-Hans" href="https://logicphile.com/pohps-zh-hans">
+    <link rel="alternate" hreflang="x-default" href="https://logicphile.com/pohps">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="pohps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>POHPS：素食蛋白质</title>
+</head>
+<body class="ph-page">
+    <header>
+        <h1>Logicphile</h1>
+    </header>
+
+    <section class="ph-hero">
+        <div class="ph-container">
+            <nav class="ph-lang-switch" style="--ph-lang-count: 3; --ph-lang-pos: 2;" aria-label="语言 Language">
+                <span class="ph-lang-indicator" aria-hidden="true"></span>
+                <a href="pohps.html?lang=en" lang="en" hreflang="en">English</a>
+                <a href="pohps-zh-hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+                <a href="pohps-zh-hans.html" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">简体中文</a>
+            </nav>
+            <img class="ph-hero-icon" src="pohps-images/app_icon.png" alt="POHPS 应用图标">
+            <span class="ph-eyebrow">专为素食者与全素者设计</span>
+            <h2>POHPS：素食蛋白质</h2>
+            <p class="ph-lead">在植物性饮食中，追踪每日蛋白质、铁质、钙质、维生素 B12 与水分。</p>
+            <p class="ph-sublead">设定每日蛋白质目标，点一下就能记录吃了什么，看着进度环随着一天慢慢填满。POHPS 也会留意素食与全素饮食中容易不足的营养素。</p>
+            <a class="ph-hero-cta" href="#download">下载应用 <i class="bi bi-arrow-down-short" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+    <main class="ph-features">
+
+        <!-- Feature 1: Dashboard (image left / copy right) -->
+        <section class="ph-feature ph-feature--dashboard">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-left ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/protein_tracker_zh-hans.png" alt="主页：蛋白质进度环显示 82g，目标 68g，下方有 B12 打卡、营养小提示及当天的食物与饮品" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-right">
+                    <span class="ph-eyebrow">一眼掌握今天</span>
+                    <h3>随着进食逐渐填满的蛋白质环</h3>
+                    <p>主页以一个圆环显示您今天距离蛋白质目标的进度。每记录一项食物，总量就会增加；达成目标时，还会出现简短的庆祝画面。左右滑动圆环即可切换到水分、铁质与钙质，具体取决于您在“设置”中开启了哪些追踪项目。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 自行设定每日蛋白质目标，例如营养师建议的摄入量</li>
+                        <li><span class="ph-tick">✓</span> 可选择追踪水分、铁质、钙质与维生素 B12</li>
+                        <li><span class="ph-tick">✓</span> 切换日期即可回顾之前的记录</li>
+                        <li><span class="ph-tick">✓</span> 记录每项食物的时间，也可以标记您有多喜欢它</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 2: Add food (image right / copy left) -->
+        <section class="ph-feature ph-feature--add ph-reverse">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-right ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/add_food_zh-hans.png" alt="添加食物界面：搜索栏、分类筛选，以及显示每份蛋白质含量的收藏食物" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-left">
+                    <span class="ph-eyebrow">一键记录</span>
+                    <h3>点一下就能添加食物</h3>
+                    <p>打开“添加食物”，找到您吃的食物，点一下就完成记录，它会马上计入进度环。POHPS 内置约 100 种常见素食，每种都标明每份的蛋白质、水分、铁质与钙质，让您在添加前就知道它能提供多少营养。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 按名称搜索，或浏览“饮品”“乳蛋类”等分类</li>
+                        <li><span class="ph-tick">✓</span> 为常吃的食物加上星标，让它们优先显示在“收藏”中</li>
+                        <li><span class="ph-tick">✓</span> 食物列表会根据您的饮食类型调整：蛋奶素、全素、五辛素或五辛全素</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 3: Custom food (image left / copy right) -->
+        <section class="ph-feature ph-feature--custom">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-left ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/add_custom_food_zh-hans.png" alt="创建自定义食物界面：食物或补充剂切换、图标选择、食物名称与份量输入框，以及添加食材按钮" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-right">
+                    <span class="ph-eyebrow">您的专属食谱</span>
+                    <h3>用自己的食材创建自定义食物</h3>
+                    <p>有喜欢的果昔或家常食谱吗？只要创建一次，之后每次吃都能一键记录。从数据库挑选食材组合成新食物，POHPS 会自动加总蛋白质与水分；也可以根据营养成分表自行输入蛋白质。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 想创建多少自定义食物与补充剂都可以</li>
+                        <li><span class="ph-tick">✓</span> 选择您一看就认得的图标、名称与份量</li>
+                        <li><span class="ph-tick">✓</span> 组合食材，或手动输入蛋白质数值</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 4: Statistics (image right / copy left) -->
+        <section class="ph-feature ph-feature--stats ph-reverse">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-right ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/statistics_zh-hans.png" alt="统计界面：每月蛋白质趋势图与 68g 目标线，以及主要蛋白质来源列表" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-left">
+                    <span class="ph-eyebrow">掌握趋势</span>
+                    <h3>看清蛋白质从哪里来的统计</h3>
+                    <p>“蛋白质趋势”图表将您每天的摄入量与目标线并列，哪几天不足一目了然。下方的“主要蛋白质来源”按贡献多少排列食物，并显示各自的克数与百分比。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 可按周、月、年或本年至今查看</li>
+                        <li><span class="ph-tick">✓</span> 看看哪些食物最能帮助您达成目标</li>
+                        <li><span class="ph-tick">✓</span> 利用这些信息规划您的餐食</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 5: Calendar (image left / copy right) -->
+        <section class="ph-feature ph-feature--calendar">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-left ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/calendar_zh-hans.png" alt="2026 年 10 月的目标日历，达成目标的日子以绿色标示，下方有导出至 Excel 按钮" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-right">
+                    <span class="ph-eyebrow">养成好习惯</span>
+                    <h3>每个月的目标日历</h3>
+                    <p>每天达成蛋白质目标，那一天在“目标日历”上就会变成绿色。一整个月的色块让您一眼看出连续达成的天数，空白处则提醒您接下来该加强的地方。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 绿色代表达成目标，灰色代表未达成目标</li>
+                        <li><span class="ph-tick">✓</span> 切换月份，回顾过去的记录</li>
+                        <li><span class="ph-tick">✓</span> 将记录导出为 Excel 文件，自行保存或与营养师分享</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 6: Achievements (image right / copy left) -->
+        <section class="ph-feature ph-feature--achievements ph-reverse">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-right ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/achievements_zh-hans.png" alt="成就列表，包括第一口、达成一半、目标达成、大厨特制、三日连续与一周勇士" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-left">
+                    <span class="ph-eyebrow">庆祝每个里程碑</span>
+                    <h3>记录您每一步进展的成就</h3>
+                    <p>从记录第一项食物，到连续 30 天达成目标，成就会随着您的进展陆续解锁。随时点击主页上的奖杯图标，就能查看您获得的所有成就。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> “第一口”“达成一半”与“目标达成”记录您每天的进度</li>
+                        <li><span class="ph-tick">✓</span> 创建第一个自定义食物时，获得“大厨特制”</li>
+                        <li><span class="ph-tick">✓</span> 连续 3 天、7 天与 30 天达成目标的连续记录成就</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="ph-highlights">
+        <div class="ph-container">
+            <h3 class="ph-reveal ph-reveal-up">用心设计</h3>
+            <p class="ph-lead ph-reveal ph-reveal-up">关于 POHPS，您还可以了解这些。</p>
+            <div class="ph-highlight-grid">
+                <div class="ph-highlight-card ph-reveal ph-reveal-up">
+                    <div class="ph-icon" aria-hidden="true">🔒</div>
+                    <h4>重视隐私</h4>
+                    <p>您的记录只保存在设备上。不需要注册账号，也可以将数据备份成文件，之后再恢复。</p>
+                </div>
+                <div class="ph-highlight-card ph-reveal ph-reveal-up">
+                    <div class="ph-icon" aria-hidden="true">🌗</div>
+                    <h4>浅色或深色主题</h4>
+                    <p>在“设置”中选择浅色或深色主题，或设为“自动”以跟随手机的设置。</p>
+                </div>
+                <div class="ph-highlight-card ph-reveal ph-reveal-up">
+                    <div class="ph-icon" aria-hidden="true">🌏</div>
+                    <h4>三种语言</h4>
+                    <p>POHPS 支持英文、繁体中文与简体中文，并可选择公制或英制单位。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ph-cta" id="download">
+        <div class="ph-container">
+            <h3 class="ph-reveal ph-reveal-up">已在 Google Play 上架</h3>
+            <p class="ph-lead ph-reveal ph-reveal-up">用手机相机扫描二维码，或点击徽章，即可在 Google Play 打开 POHPS。</p>
+            <div class="ph-cta-row ph-reveal ph-reveal-up">
+                <div class="ph-store">
+                    <a class="ph-qr-link" href="https://play.google.com/store/apps/details?id=com.logicphile.pohps&amp;hl=zh_CN" aria-label="在 Google Play 打开 POHPS">
+                        <div class="ph-qrcode"></div>
+                    </a>
+                    <a class="ph-badge-link" href="https://play.google.com/store/apps/details?id=com.logicphile.pohps&amp;hl=zh_CN">
+                        <img class="ph-badge" src="https://play.google.com/intl/en_us/badges/static/images/badges/zh-cn_badge_web_generic.png" alt="下载应用，请到 Google Play">
+                    </a>
+                </div>
+            </div>
+            <p class="ph-disclaimer ph-reveal ph-reveal-up">POHPS 不能替代专业的医疗或饮食建议，营养数值仅为估计值。改变饮食前，请先咨询您的医生或营养师。</p>
+            <p class="ph-support-links ph-reveal ph-reveal-up">
+                <a href="pohps-support-zh-hant.html#support">支持</a>
+                <span aria-hidden="true">·</span>
+                <a href="pohps-support-zh-hant.html#privacy">隐私政策</a>
+                <span aria-hidden="true">·</span>
+                <a href="pohps-support-zh-hant.html#disclaimer">免责声明</a>
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-media">
+            <div class="copyright">
+                <p>© 2026 Logicphile Limited. 版权所有。</p>
+                <p>POHPS：素食蛋白质</p>
+            </div>
+            <a href="https://x.com/allanviolin" id="x" aria-label="X">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.youtube.com/@allanviolin" id="youtube" aria-label="YouTube">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/logicphile" id="facebook" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="pohps.js"></script>
+</body>
+</html>
