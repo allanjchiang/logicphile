@@ -288,6 +288,17 @@
   gap: 96px;
   flex-wrap: wrap;
 }
+.bwt-support-links{
+  margin: 48px 0 0;
+  font-size: 18px;
+}
+.bwt-support-links a{
+  color: var(--bwt-navy);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.bwt-support-links span{ margin: 0 10px; color: var(--bwt-green); }
 .bwt-store{
   display: flex;
   flex-direction: column;
