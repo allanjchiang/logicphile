@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="POHPS：素食蛋白質，協助素食者與全素者追蹤每日蛋白質、鐵質、鈣質、維生素 B12 與水分，提供一鍵記錄、自訂食物、統計圖表與目標日曆。">
+    <link rel="canonical" href="https://logicphile.com/pohps-zh-hant">
+    <link rel="alternate" hreflang="en" href="https://logicphile.com/pohps">
+    <link rel="alternate" hreflang="zh-Hant" href="https://logicphile.com/pohps-zh-hant">
+    <link rel="alternate" hreflang="x-default" href="https://logicphile.com/pohps">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="pohps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>POHPS：素食蛋白質</title>
+</head>
+<body class="ph-page">
+    <header>
+        <h1>Logicphile</h1>
+    </header>
+
+    <section class="ph-hero">
+        <div class="ph-container">
+            <nav class="ph-lang-switch ph-lang-switch--right" aria-label="語言 Language">
+                <span class="ph-lang-indicator" aria-hidden="true"></span>
+                <a href="pohps.html?lang=en" lang="en" hreflang="en">English</a>
+                <a href="pohps-zh-hant.html" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁體中文</a>
+            </nav>
+            <img class="ph-hero-icon" src="pohps-images/app_icon.png" alt="POHPS App 圖示">
+            <span class="ph-eyebrow">專為素食者與全素者設計</span>
+            <h2>POHPS：素食蛋白質</h2>
+            <p class="ph-lead">在植物性飲食中，追蹤每日蛋白質、鐵質、鈣質、維生素 B12 與水分。</p>
+            <p class="ph-sublead">設定每日蛋白質目標，點一下就能記錄吃了什麼，看著進度環隨著一天慢慢填滿。POHPS 也會留意素食與全素飲食中容易不足的營養素，並以沉穩、易讀的設計呈現。</p>
+            <a class="ph-hero-cta" href="#download">下載 App <i class="bi bi-arrow-down-short" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+    <main class="ph-features">
+
+        <!-- Feature 1: Dashboard (image left / copy right) -->
+        <section class="ph-feature ph-feature--dashboard">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-left ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/protein_tracker_zh-hant.png" alt="主畫面：蛋白質進度環顯示 82g，目標 68g，下方有 B12 打卡、營養小提示及當天的食物與飲品" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-right">
+                    <span class="ph-eyebrow">一眼掌握今天</span>
+                    <h3>隨著進食逐漸填滿的蛋白質環</h3>
+                    <p>主畫面以一個圓環顯示您今天距離蛋白質目標的進度。每記錄一項食物，總量就會增加；達成目標時，還會出現簡短的慶祝畫面。左右滑動圓環即可切換至水分、鐵質與鈣質，視您在「設定」中開啟了哪些追蹤項目而定。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 自行設定每日蛋白質目標，例如營養師建議的攝取量</li>
+                        <li><span class="ph-tick">✓</span> 可選擇追蹤水分、鐵質、鈣質與維生素 B12</li>
+                        <li><span class="ph-tick">✓</span> 切換日期即可回顧先前的紀錄</li>
+                        <li><span class="ph-tick">✓</span> 記錄每項食物的時間，也可以標記您有多喜歡它</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 2: Add food (image right / copy left) -->
+        <section class="ph-feature ph-feature--add ph-reverse">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-right ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/add_food_zh-hant.png" alt="新增食物畫面：搜尋列、分類篩選，以及顯示每份蛋白質含量的我的最愛食物" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-left">
+                    <span class="ph-eyebrow">一鍵記錄</span>
+                    <h3>點一下就能新增食物</h3>
+                    <p>打開「新增食物」，找到您吃的食物，點一下就完成記錄。POHPS 內建約 100 種常見素食，每種都標示每份的蛋白質、水分、鐵質與鈣質，讓您在新增前就知道它能提供多少營養。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 以名稱搜尋，或瀏覽「飲品」、「乳蛋類」等分類</li>
+                        <li><span class="ph-tick">✓</span> 為常吃的食物加上星號，讓它們優先顯示在「我的最愛」</li>
+                        <li><span class="ph-tick">✓</span> 食物清單會依您的飲食類型調整：蛋奶素、全素、五辛素或五辛全素</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 3: Custom food (image left / copy right) -->
+        <section class="ph-feature ph-feature--custom">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-left ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/add_custom_food_zh-hant.png" alt="建立自訂食物畫面：食物或補充劑切換、圖示選擇、食物名稱與份量欄位，以及新增食材按鈕" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-right">
+                    <span class="ph-eyebrow">您的專屬食譜</span>
+                    <h3>用自己的食材建立自訂食物</h3>
+                    <p>有喜歡的果昔或家傳食譜嗎？只要建立一次，之後每次吃都能一鍵記錄。從資料庫挑選食材組合成新食物，POHPS 會自動加總蛋白質與水分；也可以依照營養標示自行輸入蛋白質。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 想建立多少自訂食物與補充劑都可以</li>
+                        <li><span class="ph-tick">✓</span> 選擇您一看就認得的圖示、名稱與份量</li>
+                        <li><span class="ph-tick">✓</span> 組合食材，或手動輸入蛋白質數值</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 4: Statistics (image right / copy left) -->
+        <section class="ph-feature ph-feature--stats ph-reverse">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-right ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/statistics_zh-hant.png" alt="統計畫面：每月蛋白質趨勢圖與 68g 目標線，以及主要蛋白質來源清單" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-left">
+                    <span class="ph-eyebrow">掌握趨勢</span>
+                    <h3>看清蛋白質從哪裡來的統計</h3>
+                    <p>「蛋白質趨勢」圖表將您每天的攝取量與目標線並列，哪幾天不足一目了然。下方的「主要蛋白質來源」依貢獻多寡排列食物，並顯示各自的公克數與百分比。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 可依週、月、年或本年至今檢視</li>
+                        <li><span class="ph-tick">✓</span> 看看哪些食物最能幫助您達成目標</li>
+                        <li><span class="ph-tick">✓</span> 運用這些資訊規劃您的餐點</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 5: Calendar (image left / copy right) -->
+        <section class="ph-feature ph-feature--calendar">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-left ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/calendar_zh-hant.png" alt="2026 年 10 月的目標日曆，達成目標的日子以綠色標示，下方有匯出至 Excel 按鈕" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-right">
+                    <span class="ph-eyebrow">養成好習慣</span>
+                    <h3>每個月的目標日曆</h3>
+                    <p>每天達成蛋白質目標，那一天在「目標日曆」上就會變成綠色。一整個月的色塊讓您一眼看出連續達成的天數，空白處則提醒您接下來該加強的地方。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 綠色代表達成目標，灰色代表未達成目標</li>
+                        <li><span class="ph-tick">✓</span> 切換月份，回顧過去的紀錄</li>
+                        <li><span class="ph-tick">✓</span> 將紀錄匯出為 Excel 檔案，自行保存或與營養師分享</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 6: Achievements (image right / copy left) -->
+        <section class="ph-feature ph-feature--achievements ph-reverse">
+            <div class="ph-container ph-feature-inner">
+                <div class="ph-feature-media">
+                    <div class="ph-media-glow"></div>
+                    <div class="ph-reveal ph-reveal-right ph-phone-float">
+                        <div class="ph-phone-frame">
+                            <img src="pohps-images/achievements_zh-hant.png" alt="成就清單，包括第一口、達成一半、目標達成、主廚特餐、三日連續與一週勇士" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="ph-feature-copy ph-reveal ph-reveal-left">
+                    <span class="ph-eyebrow">慶祝每個里程碑</span>
+                    <h3>記錄您每一步進展的成就</h3>
+                    <p>從記錄第一項食物，到連續 30 天達成目標，成就會隨著您的進展陸續解鎖。隨時點擊主畫面上的獎盃圖示，就能查看您獲得的所有成就。</p>
+                    <ul>
+                        <li><span class="ph-tick">✓</span> 「第一口」、「達成一半」與「目標達成」記錄您每天的進度</li>
+                        <li><span class="ph-tick">✓</span> 建立第一個自訂食物時，獲得「主廚特餐」</li>
+                        <li><span class="ph-tick">✓</span> 連續 3 天、7 天與 30 天達成目標的連續紀錄成就</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="ph-highlights">
+        <div class="ph-container">
+            <h3 class="ph-reveal ph-reveal-up">用心設計</h3>
+            <p class="ph-lead ph-reveal ph-reveal-up">POHPS 的設計清楚又舒適，適合每天使用。</p>
+            <div class="ph-highlight-grid">
+                <div class="ph-highlight-card ph-reveal ph-reveal-up">
+                    <div class="ph-icon" aria-hidden="true">🔒</div>
+                    <h4>重視隱私</h4>
+                    <p>您的紀錄只保存在裝置上。不需要建立帳號，也可以將資料備份成檔案，之後再還原。</p>
+                </div>
+                <div class="ph-highlight-card ph-reveal ph-reveal-up">
+                    <div class="ph-icon" aria-hidden="true">👓</div>
+                    <h4>清楚易讀</h4>
+                    <p>大字體、大按鈕與高對比色彩，並支援淺色與深色模式。</p>
+                </div>
+                <div class="ph-highlight-card ph-reveal ph-reveal-up">
+                    <div class="ph-icon" aria-hidden="true">🌏</div>
+                    <h4>三種語言</h4>
+                    <p>POHPS 支援英文、繁體中文與簡體中文，並可選擇公制或英制單位。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ph-cta" id="download">
+        <div class="ph-container">
+            <h3 class="ph-reveal ph-reveal-up">已在 Google Play 上架</h3>
+            <p class="ph-lead ph-reveal ph-reveal-up">用手機相機掃描 QR 碼，或點擊徽章，即可在 Google Play 開啟 POHPS。</p>
+            <div class="ph-cta-row ph-reveal ph-reveal-up">
+                <div class="ph-store">
+                    <a class="ph-qr-link" href="https://play.google.com/store/apps/details?id=com.logicphile.pohps&amp;hl=zh_TW" aria-label="在 Google Play 開啟 POHPS">
+                        <div class="ph-qrcode"></div>
+                    </a>
+                    <a class="ph-badge-link" href="https://play.google.com/store/apps/details?id=com.logicphile.pohps&amp;hl=zh_TW">
+                        <img class="ph-badge" src="https://play.google.com/intl/en_us/badges/static/images/badges/zh-tw_badge_web_generic.png" alt="立即下載 Google Play">
+                    </a>
+                </div>
+            </div>
+            <p class="ph-disclaimer ph-reveal ph-reveal-up">POHPS 不能取代專業的醫療或飲食建議，營養數值僅為估計值。改變飲食前，請先諮詢您的醫師或營養師。</p>
+            <p class="ph-support-links ph-reveal ph-reveal-up">
+                <a href="pohps-support-zh-hant.html#support">支援</a>
+                <span aria-hidden="true">·</span>
+                <a href="pohps-support-zh-hant.html#privacy">隱私權政策</a>
+                <span aria-hidden="true">·</span>
+                <a href="pohps-support-zh-hant.html#disclaimer">免責聲明</a>
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-media">
+            <div class="copyright">
+                <p>© 2026 Logicphile Limited. 版權所有。</p>
+                <p>POHPS：素食蛋白質</p>
+            </div>
+            <a href="https://x.com/allanviolin" id="x" aria-label="X">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.youtube.com/@allanviolin" id="youtube" aria-label="YouTube">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/logicphile" id="facebook" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="pohps.js"></script>
+</body>
+</html>

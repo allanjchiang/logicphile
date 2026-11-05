@@ -25,7 +25,73 @@
   background: var(--ph-bg);
 }
 
+/* Traditional Chinese page: Latin glyphs from Open Sans, CJK from Noto Sans TC.
+   Negative tracking and uppercase styling suit Latin text only. */
+.ph-page:lang(zh-Hant){
+  font-family: 'Open Sans', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+  line-height: 1.8;
+}
+.ph-page:lang(zh-Hant) h2,
+.ph-page:lang(zh-Hant) h3{ letter-spacing: 0.5px; }
+.ph-page:lang(zh-Hant) .ph-eyebrow{ letter-spacing: 2px; }
+
 .ph-page *{ box-sizing: border-box; }
+
+/* ---------- Language switch ---------- */
+/* Wrapper used on the support pages, which don't use .ph-page */
+.ph-lang-row{ text-align: center; padding-top: 24px; }
+.ph-lang-switch{
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto 32px;
+  padding: 5px;
+  border-radius: 999px;
+  background: rgba(85,107,47,0.11);
+  box-shadow: inset 0 0 0 1px rgba(85,107,47,0.18);
+  animation: ph-fade-down 0.7s ease both;
+}
+.ph-lang-switch a{
+  position: relative;
+  z-index: 1;
+  min-width: 128px;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  color: var(--ph-olive);
+  transition: color 0.3s ease;
+}
+.ph-lang-switch a[lang="zh-Hant"]{ font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; }
+.ph-lang-switch a:not([aria-current]):hover{ color: var(--ph-olive-deep); }
+.ph-lang-switch a:focus-visible{ outline: 3px solid var(--ph-khaki); outline-offset: 2px; }
+.ph-lang-switch a[aria-current="page"]{ color: #fff; }
+.ph-lang-indicator{
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  width: calc(50% - 5px);
+  border-radius: 999px;
+  background: var(--ph-olive);
+  box-shadow: 0 6px 14px -6px rgba(47,58,34,0.6);
+  transition: transform 0.35s cubic-bezier(.4,.1,.2,1);
+}
+/* Indicator sits under the current link (right side on the zh-Hant page) */
+.ph-lang-switch--right .ph-lang-indicator{ transform: translateX(100%); }
+/* While switching, slide the indicator to the other side and swap colors */
+.ph-lang-switch.ph-switching .ph-lang-indicator{ transform: translateX(100%); }
+.ph-lang-switch--right.ph-switching .ph-lang-indicator{ transform: translateX(0); }
+.ph-lang-switch.ph-switching a[aria-current="page"]{ color: var(--ph-olive); }
+.ph-lang-switch.ph-switching a:not([aria-current]){ color: #fff; }
+
+.ph-page.ph-leaving{
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
 .ph-page img{ max-width: 100%; height: auto; display: block; }
 
 .ph-container{
@@ -394,6 +460,10 @@
   from{ opacity: 0; transform: translateY(18px); }
   to{ opacity: 1; transform: none; }
 }
+@keyframes ph-fade-down{
+  from{ opacity: 0; transform: translateY(-12px); }
+  to{ opacity: 1; transform: none; }
+}
 @keyframes ph-pop-in{
   from{ opacity: 0; transform: scale(0.6); }
   to{ opacity: 1; transform: scale(1); }
@@ -401,7 +471,8 @@
 
 @media (prefers-reduced-motion: reduce){
   .ph-hero-icon, .ph-phone-float, .ph-media-glow,
-  .ph-hero .ph-eyebrow, .ph-hero h2, .ph-hero p, .ph-hero-cta{ animation: none !important; }
+  .ph-hero .ph-eyebrow, .ph-hero h2, .ph-hero p, .ph-hero-cta, .ph-lang-switch{ animation: none !important; }
+  .ph-lang-indicator, .ph-lang-switch a, .ph-page.ph-leaving{ transition: none !important; }
   .ph-reveal, .ph-feature-copy li{ transition: none !important; opacity: 1 !important; transform: none !important; }
   .ph-phone-frame:hover, .ph-qr-link:hover{ transform: none; }
 }
